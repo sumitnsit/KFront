@@ -1,0 +1,72 @@
+<html>
+<head>
+	<title>On Off</title>
+	<style type="text/css">
+		
+		body{
+			background-color: #ECECEC;
+		}
+		input[type=checkbox]{
+			display: none;
+		}
+
+		label{
+			cursor: pointer;
+			position: absolute;
+		}
+
+		label{
+			width: 36px;
+			height: 18px;
+			border-radius: 12px;
+			background-color: #f9f9f9;
+			/*border: 1px solid #EDEDED;*/
+			box-shadow: -1px -1px 1px #333, 1px 1px 1px #fff;
+			-webkit-transition: all .2s ease;
+			/*background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#000000), color-stop(100%,#7A7A7A));*/
+		}
+
+		label:before{
+			position: absolute;
+			content: '';
+			width: 16px;
+			height: 16px;
+			background-color: #FFF;
+			/*top: -1px;*/
+			border-radius: 18px;
+			border: 1px solid #DDD;
+			/*background: -webkit-radial-gradient(center, ellipse cover, #fff 0%,#aaa 100%);*/
+			-webkit-transition: all .1s ease;
+		}
+
+		label:after{
+			position: absolute;
+			left: 50px;
+			content: "Off";
+			line-height: 18px;
+		}
+
+		input[type=checkbox]:checked + label:before {
+			left: 18px;
+			border-color: #0C46DF;
+			
+		}
+
+		input[type=checkbox]:checked + label:after {
+			content: "On";
+		}
+
+		input[type=checkbox]:checked + label {
+			/*background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#3EC33C), color-stop(100%,#00FF22));*/
+			background-color: #536BFF;
+		}
+
+	</style>
+</head>
+<body>
+	<h1>Checkbox</h1>
+	<h2>Here is my custom checkbox</h2>
+	<input type="checkbox" id="check">
+	<label for="check"></label>
+</body>
+</html>

@@ -1,0 +1,290 @@
+@font-face
+{
+        font-family: Ubuntu
+        src: url(../fonts/ubuntu/Ubuntu-R.ttf);
+}
+
+
+h1, h2, h3, h4, h5, h6, html, p, table, tr, td, th, tbody, thead, body{
+	margin: 0px;
+	padding: 0px;
+} 
+
+body{
+	font-size: 14px;
+	font-family: Ubuntu, Arial;
+	background-color: #F4F4F4;
+}
+
+[class*="col"]{
+	float: left;
+}
+
+.layoutFull{
+	width: 100%;
+}
+
+.col1{
+	width: 8.333333333%;
+}
+
+.col2{
+	width: 16.666666667%;
+}
+
+.col3{
+	width: 25%;
+}
+
+.col4{
+	width: 33.333333333%;
+}
+
+.col5{
+	width: 41.666666667%;
+}
+
+.col6{
+	width: 50%;
+}
+
+.col7{
+	width: 58.333333333%;
+}
+
+.col8{
+	width: 66.666666667%;
+}
+
+.col9{
+	width: 75%;
+}
+
+.col10{
+	width: 83.333333333%;
+}
+
+.col11{
+	width: 91.666666667%;
+}
+
+.col12{
+	width: 100%;
+}
+
+/* Offsets */
+
+.offset1{
+	margin-left: 8.333333333%;
+}
+
+.offset2{
+	margin-left: 16.666666667%;
+}
+
+.offset3{
+	margin-left: 25%;
+}
+
+.offset4{
+	margin-left: 33.333333333%;
+}
+
+.offset5{
+	margin-left: 41.666666667%;
+}
+
+.offset6{
+	margin-left: 50%;
+}
+
+.offset7{
+	margin-left: 58.333333333%;
+}
+
+.offset8{
+	margin-left: 66.666666667%;
+}
+
+.offset9{
+	margin-left: 75%;
+}
+
+.offset10{
+	margin-left: 83.333333333%;
+}
+
+.offset11{
+	margin-left: 91.666666667%;
+}
+
+
+.container{
+	width: 100%;
+	min-height: 1px;
+}
+
+.borderAll{
+	border: 1px solid black;
+}
+
+.paddingAll{
+	padding: 20px;
+}
+
+/* Headings */
+[class*="h"]{
+	font-weight: 900;
+}
+
+[class*="h"] small{
+	font-size: .7em;
+}
+
+.h1{
+	font-size: 36px;
+}
+
+.h2{
+	font-size: 30px;
+}
+
+.h3{
+	font-size: 24px;
+}
+
+.h4{
+	font-size: 18px;
+}
+
+.h5{
+	font-size: 14px;
+}
+
+.h6{
+	font-size: 12px;
+}
+
+/* Tables */
+
+.simple-table{
+	width: 100%;
+}
+
+.simple-table thead{
+	height: 30px;
+}
+
+.simple-table tr{
+	height: 30px;
+	border: 2px solid black;
+
+}
+
+.simple-table th{
+	text-align: left;
+}
+
+.striped-table{
+	width: 100%;
+}
+
+.striped-table thead{
+	height: 30px;
+}
+
+.striped-table tr{
+	height: 30px;
+}
+
+.striped-table th{
+	text-align: left;
+}
+
+.striped-table tr:nth-child(2n){
+	background-color: #ECECEC;
+}
+
+/* Buttons */
+
+.btnGrp{
+	position: relative;
+	border: 1px solid #F00;
+	display: inline;
+	width: 300px;
+	min-height: 140px;
+	border-radius: 5px;
+}
+
+.btnGrp .btn{
+	/*display: inline-block;
+	border-radius: 0px;
+	border-bottom: none;
+	border-top: none;
+	border-left: none;*/
+}
+
+.btn{
+	border:1px solid #CCC;
+	border-radius: 5px;
+	/*text-align: center;*/
+	/*height: 30px;*/
+	/*line-height: 30px;*/
+	/*background-color: #F4F4F4;*/
+	/*min-width: 70px;*/
+}
+
+/* Elegent Table */
+
+.elegent-table{
+	width: 80%;
+	padding: 30px;
+	position: relative;
+}
+
+.elegent-table .table-header{
+	display: block;
+	height: 30px;
+	line-height: 30px;
+	background: #FCC;
+	border: 1px solid #CCC;
+	border-radius: 5px 5px 0px 0px;
+	background-image: -webkit-linear-gradient(top, #FCFCFC 0%, #F3F3F3 100%);
+}
+
+.elegent-table thead tr{
+	border: none;
+}
+
+.elegent-table .table-body .table-row{
+	display: block;
+	height: 30px;
+	line-height: 30px;
+	border: 1px solid #CCC;
+	border-top: none;
+}
+
+
+.elegent-table .table-body .table-row:hover{
+	background-color: #F6F6F6;
+}
+
+.elegent-table td{
+	width: 
+}
+
+.elegent-table th{
+
+	padding-left: 20px;
+	text-align: left;
+}
+
+.elegent-table tr:nth-child(2n){
+	background-color: #ECECEC;
+}
+
+/*Temp*/
+
+.temp{
+	background-color: #CFC;
+}
