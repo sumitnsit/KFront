@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Accordion</title>
+	<link rel='stylesheet' type='text/css' href='font-awesome/css/font-awesome.css'>
+	<script type="text/javascript">
+		function $(element){
+			return document.getElementById(element);
+		}
+
+		function expand(row){
+			// var row = $("row1");
+			var accordion = $("accordion");
+
+			if(row.dataset.expanded === "true"){
+				row.style.height = "30px";	
+				row.className = "row collapsed";
+				row.dataset.expanded = false;
+			} else {
+				var expandedItem = accordion.dataset.expandeditem;
+				if(expandedItem != "none"){
+					var lastItem = $(expandedItem);
+					lastItem.style.height = "30px";
+					lastItem.dataset.expanded = false;
+					lastItem.className = "row collapsed";
+				}
+				row.style.height = "200px";
+				row.dataset.expanded = true;
+				row.className = "row expanded";
+				accordion.dataset.expandeditem = row.id;
+			}
+			
+		}
+
+	</script>
+	<style type="text/css">
+
+		.row{
+			width: 200px;
+			height: 30px;
+			background-color: #244063;
+			border-top: 1px solid #2A415F;
+			-webkit-transition:height .3s;
+			-webkit-transition-timing-function: cubic-bezier(0.5,.8,.9,.95,1);
+			box-shadow: 3px 4px 8px #888;
+		}
+
+		.head{
+			font-family: Arial, FontAwesome;
+			width: 190px;
+			height: 30px;
+			background-color: #1B2E4E;
+			color: #CFCFCF;
+			font-size: 12px;
+			display: block;
+			padding-left: 10px;
+			line-height: 30px;
+		}
+	
+		.collapsed span:before{
+			content: "\f0da";
+		}
+
+		.expanded span:before{
+			content: "\f0dd";			
+		}
+
+	</style>
+</head>
+<body>
+
+<div id="accordion" data-expandedItem="none">
+	<div id="row1" class="row collapsed" data-expanded=false onclick="expand(this)">
+		<div class="head"><span></span> Section 1</div>
+		<div class="rowData"></div>
+	</div>
+	<div id="row2" class="row collapsed" data-expanded=false onclick="expand(this)">
+		<div class="head"><span></span> Section 2</div>
+		<div class="rowData"></div>
+	</div>
+	<div id="row3" class="row collapsed" data-expanded=false onclick="expand(this)">
+		<div class="head"><span></span> Section 3</div>
+		<div clas="rowData"></div>
+	</div>
+	<div id="row4" class="row collapsed" data-expanded=false onclick="expand(this)">
+		<div class="head"><span></span> Section 4</div>
+		<div class="rowData"></div>
+	</div>
+</div>
+</body>
+</html>
