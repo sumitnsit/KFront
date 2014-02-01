@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Radio Button</title>
+</head>
+<style type="text/css">
+
+	body{
+		width: 80%;
+		margin: 30px auto;
+		color: #999;
+	}
+
+	.k_radio input[type="radio"]{
+		display: none;
+	}
+
+	.k_radio label:before{
+		position: absolute;
+		content: '';
+		width: 18px;
+		height: 18px;
+		margin-left: -25px;
+		border-radius: 20px;
+		border: 1px solid #CCC;
+		font-size: 1.5em;
+		
+		background: -webkit-radial-gradient(center, circle cover, #ffffff 0%,#ffffff 47%,#cccccc 97%);
+
+	}
+
+	.k_radio label{
+		position: relative;
+		line-height: 18px;
+		margin-left: 25px; 
+		cursor: pointer;
+	}
+
+	.k_radio input[type=radio]:checked + label:before {
+    	content: "\2022";
+    	text-align: center;
+	}
+
+</style>
+<body>
+
+	<div class="k_radio">
+		<input id="male" type="radio" name="gender" value="male">
+		<label for="male">Radio Button</label>
+
+	</div>
+	
+</body>
+</html>

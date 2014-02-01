@@ -1,0 +1,253 @@
+body{
+	margin: 0px;
+	padding: 20px 0px;
+	background-color: #999;
+	font-size: 14px;
+	font-family: Helvetica;
+}
+
+.workarea{
+	margin: 0px auto;
+	width: 1024px;
+	min-height: 1000px;
+	background: -webkit-radial-gradient(rgb(70,74,80), rgb(49,54,59));
+	box-shadow: 1px 0px 4px rgba(0,0,0,0.5), -1px 0px 4px rgba(0,0,0,0.5);
+	padding: 8px;
+}
+
+.thread{
+	height: 1000px;
+	border: 1px dashed #888;
+	padding-top: 40px;
+	background: -webkit-radial-gradient(rgb(70,74,80), rgb(49,54,59));
+}
+
+.title{
+	font-size: 2.4em;
+	text-align: center;
+	font-weight: bold;
+	color: #999;
+	text-shadow: 0px 2px 4px #000;
+	font-family: Helvetica; /*UnifrakturMaguntia;*/
+	border-bottom: 1px solid rgb(49,54,59);
+	padding: 10px 0px;
+	box-shadow: 0px 2px 2px rgb(49,54,59);
+}
+
+.sub_title{
+	font-size: 1.2em;
+	font-weight: bold;
+	color: #999;
+	text-shadow: 0px 1px 2px #000;
+	font-family: Helvetica;
+	padding-bottom: 4px;
+	border-bottom: 1px solid #2E2E2E;
+	box-shadow: 0px 1px 0px #474747;
+}
+
+.k_form .border{
+padding: 10px;
+border: 1px solid #2E2E2E;
+border-radius: 6px;
+box-shadow: 0px 0px 15px #2E2E2E;
+}
+
+.inner_border{
+	padding: 20px;
+border: 1px dashed #5F5F5F;
+border-radius: 6px;
+}
+
+.inner_border input[type="date"]{
+	font-family: helvetica;
+	display: inline-block;
+	background-color: transparent;
+	padding: 5px;
+	font-size: 1.2em;
+	border-radius: 6px;
+	border: none;
+	color: rgb(139, 139, 139);
+	text-shadow: 0px -1px 1px #000;
+}
+
+.inner_border input[type="date"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    display: none;
+}
+
+.k_form label{
+	display: block;
+	margin-top: 10px;
+	font-size: 0.9e;
+	color: rgb(139, 139, 139);
+	text-shadow: 0px -1px 1px #000;
+	padding-left: 3px;
+	padding-bottom: 5px;
+}
+
+.button_bar{
+	padding-top: 10px;
+	text-align: right;
+}
+
+.k_button{
+	 outline: none;
+    padding: 0px 20px;
+    cursor: pointer;
+	margin-top: 10px;
+	background: -webkit-linear-gradient(top, rgba(255, 255, 255, .2) 0%, rgba(255, 255, 255, 0.1) 100%);
+	border: 1px solid rgba(0,0,0,0.5);
+	height: 40px;
+	border-radius: 6px;
+	box-shadow: 0px 1px 2px rgba(0,0,0,0.35), inset 0px 1px 1px #A0A0A0, inset 0px 0px 1px rgba(0,0,0,0.15);
+	line-height: 40px;
+	text-align: center;
+	color: rgb(139, 139, 139);
+	text-shadow: 0px -1px 1px #000;
+	font-family: Arial;
+}
+
+.k_button:hover{
+	background: -webkit-linear-gradient(top, rgba(255, 255, 255, .1) 0%, rgba(255, 255, 255, 0.2) 100%);
+}
+
+.k_form input[type="text"]{
+	margin-top: 5px;
+	padding: 7px;
+	border-radius: 5px;
+	border-style: none;
+	display: block;
+	width: -webkit-calc(100% - 12px);
+	box-shadow: inset 0px 1px 2px #020202, 0px 1px 1px #5A5A5A;
+	background-color: #333;
+	outline: none;
+	font-size: 1em;
+	color: #B9B9B9;
+}
+/*.k_select:after{
+	position: absolute;
+	content: '3';
+	height: 20px;
+	width: 20px;
+	border: 1px solid red;
+}*/
+
+.k_form select{
+	margin-top: 5px;
+	/*display: inline-block;*/
+	width: 100%;
+	border: none;
+	-webkit-appearance: none;
+	padding: 7px;
+	border-radius: 5px;
+	border-style: none;
+	box-shadow: inset 0px 1px 1px #525252, 0px 1px 1px #000000;
+	background-color: #333;
+	outline: none;
+	font-size: 1em;
+	color: #B9B9B9;
+}
+
+
+.k_form table{
+	width: 100%;
+	border: 1px solid #4B4B4B;
+	box-shadow: 0px 0px 2px #000;
+	border-radius: 6px;
+	padding: 10px;
+}
+
+.k_form thead{
+	height: 30px;
+	color: #0E0E0E;
+	text-shadow: 0px 1px 1px #616161;
+	text-align: left;
+}
+
+.k_form td, th{
+	padding-left: 20px;
+	border: none;
+}
+
+.k_form tr{
+	line-height: 30px;
+	border: none;
+}
+
+.k_form tbody{
+	color: #999;
+}
+
+.k_option{
+	background-color: #999;
+	color: #333;
+	line-height: 30px;
+	margin-top: 20;
+	height: 30px;
+
+}
+
+
+.k_select{
+	position: relative;
+}
+
+/*.k_select:after{
+	position: relative;
+	padding: 0px;
+	left: 93%;
+	margin: 0px;
+	top: -26px;
+	content: '\25BC';
+	pointer-events: none;
+	color: #2B2B2B;
+	text-shadow: -1px -1px 1px #3C3C3C, 1px 1px 1px #202020;
+}*/
+
+
+
+
+.accounts_overview{
+	padding: 20px;
+	width: 300px;
+}
+
+
+.accounts_overview .sub_title{
+	padding-left: 20px;
+}
+
+.k_table{
+	margin-top: 10px;
+}
+.k_table .k_row{
+	padding-left: 20px;
+	padding-right: 20px;
+	min-height: 40px;
+	line-height: 40px;
+	font-size: 0.85em;
+	font-weight: lighter;
+	color: #888;
+
+}
+
+.k_table .k_row:last-child{
+	font-size: 1.1em;
+	border-top: 1px solid rgb(49,54,59);
+	border-bottom: 1px solid rgb(49,54,59);
+	box-shadow: 0px 1px 2px rgb(49,54,59);
+}
+
+/*.k_table .k_row:nth-child(2n){
+	color: #888;
+}*/
+
+
+.account_data .account_name{
+	float: left;
+}
+
+.account_data .account_amount{
+	float: right;
+	color: #D3D3D3;
+}
