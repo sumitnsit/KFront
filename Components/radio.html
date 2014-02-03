@@ -22,18 +22,19 @@
 		height: 18px;
 		margin-left: -25px;
 		border-radius: 20px;
-		border: 1px solid #CCC;
-		font-size: 1.5em;
-		
-		background: -webkit-radial-gradient(center, circle cover, #ffffff 0%,#ffffff 47%,#cccccc 97%);
-
+		border: 1px solid rgba(0,144,255,1);
+		font-size: 1.8em;
+		background: -webkit-radial-gradient(center, circle cover, rgba(0,144,255,0.1) 0%,rgba(0,144,255,.3) 100%);
+		color: rgba(0,144,255,1);
 	}
 
 	.k_radio label{
+		font-family: Helvetica, Ubuntu, Arial ;
 		position: relative;
 		line-height: 18px;
 		margin-left: 25px; 
 		cursor: pointer;
+		color: rgba(0,144,255,1);
 	}
 
 	.k_radio input[type=radio]:checked + label:before {
@@ -45,8 +46,10 @@
 <body>
 
 	<div class="k_radio">
-		<input id="male" type="radio" name="gender" value="male">
-		<label for="male">Radio Button</label>
+		<input id="option_1" type="radio" name="option" value="Option 1">
+		<label for="option_1">Option 1</label>
+		<input id="option_2" type="radio" name="option" value="Option 2">
+		<label for="option_2">Option 1</label>
 
 	</div>
 	
